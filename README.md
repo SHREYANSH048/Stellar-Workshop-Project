@@ -1,21 +1,19 @@
-# Soroban Project
+# Remote Learning Classrooms App
 
-## Project Structure
+## Project Description
+A smart contract built using Soroban SDK that allows remote classrooms to be scheduled, tracked, and concluded efficiently. This is a simplified blockchain-based backend for managing class sessions securely and transparently.
 
-This repository uses the recommended structure for a Soroban project:
-```text
-.
-├── contracts
-│   └── hello_world
-│       ├── src
-│       │   ├── lib.rs
-│       │   └── test.rs
-│       └── Cargo.toml
-├── Cargo.toml
-└── README.md
-```
+## Project Vision
+To provide a decentralized, immutable system that ensures the integrity and accountability of remote education sessions. This contract can serve as a foundation for educational platforms leveraging blockchain for record-keeping.
 
-- New Soroban contracts can be put in `contracts`, each in their own directory. There is already a `hello_world` contract in there to get you started.
-- If you initialized this project with any other example contracts via `--with-example`, those contracts will be in the `contracts` directory as well.
-- Contracts should have their own `Cargo.toml` files that rely on the top-level `Cargo.toml` workspace for their dependencies.
-- Frontend libraries can be added to the top-level directory as well. If you initialized this project with a frontend template via `--frontend-template` you will have those files already included.
+## Key Features
+- *Create Session*: Instructors can create new class sessions with topics and timestamps.
+- *End Session*: Sessions can be marked as concluded to track attendance or enforce time limits.
+- *Query Session Info*: Anyone can retrieve session details using a unique session ID.
+
+## Future Scope
+- Add role-based access control for instructors and students.
+- Integrate attendance logging for participants.
+- Enable certificate issuance for completed sessions.
+- Link with IPFS or decentralized storage for storing session recordings or resources.
+-
